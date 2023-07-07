@@ -34,7 +34,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
 
     if (!isMounted) {
         return null;
-    }
+    };
 
     return (
         <div>
@@ -43,7 +43,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
                     <div key={url} className="relative w-[200px] h-[200px] rounded-md overflow-hidden">
                         <div className="z-10 absolute top-2 right-2">
                             <Button type="button" onClick={() => onRemove(url)}
-                                variant="destructive" size="icon"
+                                variant="destructive" size="sm"
                             >
                                 <Trash className="h-4 w-4" />
                             </Button>
@@ -65,7 +65,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
 
                     return (
                         <Button
-                            title="button"
+                            type="button"
                             disabled={disabled}
                             variant="secondary"
                             onClick={onClick}
